@@ -7,7 +7,7 @@ import java.nio.charset.StandardCharsets;
 public class SendDemo {
     public static void main(String[] args) throws IOException {
         //创建发送端的Socket对象(DatagramSocket)
-        //DatagramSocket() 构造数据报套接字并将其绑定到本地主机上的任何可用端口
+        //DatagramSocket() 构造数据报套接字并将其绑定到本地主机上的任何可用端口,有参就绑定到任一空端口
         DatagramSocket ds = new DatagramSocket();
 
         //创建数据并把数据打包
